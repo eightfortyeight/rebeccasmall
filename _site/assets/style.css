@@ -1,0 +1,39 @@
+:root{--white:#fff;--jet:#000;--pink:#ff1493;--yellow:#ff6;--purple:#665cff;--blue:#0074e4;--lemon:#fff5ca;--xlarge:42px;--large:36px;--medium:21px;--small:16px;--tiny:10px}
+body{font-family:-apple-system,BlinkMacSystemFont,"avenir next",avenir,helvetica,"helvetica neue",ubuntu,roboto,noto,"segoe ui",arial,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;font-size:var(--medium);line-height:1.3;margin:0 auto;padding:1rem 1rem;color:var(--jet);background-color:var(--white);max-width:520px}
+p{margin:1.5rem 0}
+.title{color:var(--jet)!important;margin-right:.5em}
+a:link,a:visited{color:var(--blue);text-decoration:none;transition:color .2s} a:hover{color:var(--pink)}
+img,iframe,figure,blockquote{width:100%;margin-left:-.5rem;padding-left:.5rem;height:auto;text-align:justify;font-style:italic}
+blockquote{margin-left:-1.2em;border-left:.2em solid var(--pink);padding-left:1em}
+
+/* interruptions */
+.callout{display:flex;padding:1em 1.4em;background-color:var(--lemon);color:var(--jet);margin-bottom:1em}
+.calloutemoji{font-size:var(--large);padding-right:.6em}
+.latest{margin:auto;background:linear-gradient(90deg,var(--lemon) 0%,var(--white) 100%);padding:1em}
+
+/* post stream */
+.stream{list-style-type:none;padding-left:0}
+.item{display:grid;grid-template-columns:auto 1fr 0.1fr;width:100%;padding-bottom:10px}
+.epoch{opacity:50%;font-variant-numeric:tabular-nums;letter-spacing:-.04em;padding-right:20px}
+.end{font-size:var(--small);color:var(--jet) !important;opacity:50%}
+
+/* say hey */
+.btn{font-size:var(--small);border-radius:1em;color:var(--white);padding:.2em .5em;background-color:var(--lemon);color:var(--purple)!important}
+.wave{animation-name:wave-animation;animation-duration:2.5s;animation-iteration-count:infinite;transform-origin:70% 70%;display:inline-block}
+@keyframes wave-animation {
+0%{transform:rotate(0deg)}
+10%{transform:rotate(14deg)}
+20%{transform:rotate(-8deg)}
+30%{transform:rotate(14deg)}
+40%{transform:rotate(-4deg)}
+50%{transform:rotate(10deg)}
+60%{transform:rotate(0deg)}
+100%{transform:rotate(0deg)}
+}
+
+@media (prefers-color-scheme: dark) {
+body{color:var(--white);background-color:var(--jet)}
+.title{color:var(--white)!important}
+.latest{color:var(--jet)!important}
+.end{color:var(--white) !important;opacity:50%}
+}
