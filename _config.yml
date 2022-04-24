@@ -1,0 +1,11 @@
+# ----------- CONFIGURABLE START -----------
+title:            "Rebecca Small"
+description:      "Rebecca Small works for BBC Local Radio, most recently at BBC Radio Gloucestershire."
+url:              https://rebeccasmall.co.uk
+
+# ------------ CONFIGURABLE END ------------
+
+permalink:        /:title
+defaults:
+  - values:
+      layout: "default"
